@@ -23,12 +23,12 @@ function imc () {
         }else if (valorIMC < 35){
             classification = 'você está bem acima do peso. (Obesidade grau 1). Priorize sua saúde e considere buscar a orientação de um especialista.'
         }else if (valorIMC < 40) {
-            classification = 'seu resultado indica Obesidade Grau II. Este nível aumenta significativamente o risco de condições crônicas. É altamente recomendável uma consulta médica para avaliar sua saúde metabólica."'
+            classification = 'seu resultado indica Obesidade Grau II. Este nível aumenta significativamente o risco de condições crônicas. É altamente recomendável uma consulta médica para avaliar sua saúde metabólica.'
         }else {
-            classification = 'seu resultado indica Obesidade Grau III. Este é um quadro que requer acompanhamento especializado imediato para proteger seu sistema cardiovascular e sua mobilidade."'
+            classification = 'seu resultado indica Obesidade Grau III. Este é um quadro que requer acompanhamento especializado imediato para proteger seu sistema cardiovascular e sua mobilidade.'
         }
 
-        result.textContent = `${name}, seu IMC é de ${valorIMC}, sendo assim, ${classification}`;
+        result.textContent = `${name}, seu IMC é de ${valorIMC}. Sendo assim, ${classification}`;
 
     } else {
         result.textContent = "Por favor, preencha todos os campos!"
